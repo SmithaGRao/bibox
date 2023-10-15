@@ -11,7 +11,7 @@ const Description = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <h3>Let's Build our Home</h3>
+            <h3>Let's Build our Garden</h3>
             <div className='animation'>
                 <div className="page1-img">
                     <img src={garden} alt="Rotating" className="rotating-image" />
@@ -25,4 +25,4 @@ const Description = () => {
     )
 }
 
-export default Description
+export default Description 

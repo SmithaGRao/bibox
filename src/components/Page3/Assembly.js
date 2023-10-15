@@ -18,19 +18,13 @@ const Assembly = () => {
       exit={{ opacity: 0 }}
     >
       <div className="header">
-        <p className="heading">Let's Assemble...</p>
+        <p className="heading">Assembly Zone</p>
         <div className="final-view-button">
           <Link to="/loading">
-            <button>
-              Final View
-              <img src={nextIcon} alt="icon" />
-            </button>
+    
           </Link>
           <Link to="/select-parts">
-            <button>
-              Restart
-              <img src={restart} alt="icon" />
-            </button>
+            
           </Link>
         </div>
       </div>
@@ -40,10 +34,10 @@ const Assembly = () => {
           <Droppable droppableId="selectedParts">
             {(provided, snapshot) => (
               <div ref={provided.innerRef} {...provided.droppableProps} className={`parts-list ${snapshot.isDraggingOver ? 'dragactive' : ''}`}>
-                <h2>selected parts</h2>
+                <h2>Selected materials</h2>
                 {selectedParts.map((partId, index) => (
                   <Draggable key={partId} draggableId={partId} index={index}>
-                    {(provided) => (
+                    {(provided, snapshot) => (
                       <div
                         ref={provided.innerRef}
                         {...provided.draggableProps}

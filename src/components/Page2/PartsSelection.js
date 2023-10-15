@@ -4,9 +4,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { UserContext } from '../../context/Context';
 import { motion } from 'framer-motion';
-import home from '../../assets/house.png';
+
 import nextIcon from '../../assets/next.png';
-import './styles2.css'; // Make sure to adjust the path based on your project structure
+import './styles2.css';  
 
 const responsive = {
   superLargeDesktop: {
@@ -53,12 +53,9 @@ const PartsSelection = () => {
       exit={{ opacity: 0 }}
     >
       <div className='page2-header'>
-        <h1>Select the parts for your house</h1>
+        <h1>Select the materials from the below list to make the garden arrangement</h1>
         <Link to='/'>
-          <button>
-            <img src={home} alt='home-icon' />
-            Home
-          </button>
+         
         </Link>
       </div>
       <label className='select-all'>
@@ -94,7 +91,7 @@ const PartsSelection = () => {
       <Link to='/assembly'>
         <button className='btn'>
           Next
-          <img src={nextIcon} alt='icon' />
+          
         </button>
       </Link>
     </motion.div>

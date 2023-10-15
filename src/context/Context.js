@@ -37,7 +37,23 @@ const Context = ({ children }) => {
     });
 
     const onDragEnd = (result) => {
-        // ... (unchanged)
+        // Assuming you have implemented the logic for onDragEnd
+        // You might want to update the assembledParts state based on the drag result
+        // For example:
+        if (!result.destination) {
+            return;
+        }
+
+        const sourceIndex = result.source.index;
+        const destinationIndex = result.destination.index;
+
+        const draggedPart = selectedParts[sourceIndex];
+
+        // Update assembledParts based on the drag result
+        const updatedAssembledParts = [...assembledParts];
+        updatedAssembledParts.splice(destinationIndex, 0, draggedPart);
+
+        setAssembledParts(updatedAssembledParts);
     };
 
     let value = {

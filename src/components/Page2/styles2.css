@@ -37,13 +37,13 @@
 }
 
 input {
-    accent-color: #45a379;
+    accent-color:green;
     transform: scale(1.4);
     padding-right: 5px;
 }
 
 ul.react-multi-carousel-track li {
-    /* border: 2px solid red; */
+  
     display: grid;
     place-items: center;
 }
@@ -60,7 +60,7 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
     height: 270px;
     margin: 2rem 1rem;
     border-radius: 10px;
-    /* position: relative; */
+   
 }
 
 .box:hover .card {
@@ -76,16 +76,14 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
 
 }
 
-/* .card:hover {
-    cursor: pointer;
-} */
+
 
 .card .card-front,
 .card .card-back {
-    height: 270px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 2rem;
-    display: grid;
+    display:grid;
     place-items: center;
     position: absolute;
     border-radius: 10px;
@@ -148,7 +146,7 @@ label input {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    
 }
 
 .page2 button img {
@@ -161,7 +159,7 @@ button:hover {
 }
 
 
-/* animation */
+
 .page2-header button {
     position: relative;
     perspective: 1000px;
@@ -182,7 +180,7 @@ button:hover {
     }
 }
 
-/* responsive */
+
 @media screen and (max-width:500px) {
     .page2-header button img {
         width: 50%;
