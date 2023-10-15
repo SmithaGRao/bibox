@@ -25,4 +25,4 @@ const Description = () => {
     )
 }
 
-export default Description1
+export default Description
